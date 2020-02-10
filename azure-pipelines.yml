@@ -12,7 +12,7 @@ variables:
   azureSubscription: 'a9ffb52a-ab87-4718-9986-e180a29c7c09'
   
   # Web app name
-  webAppName: ''
+  webAppName: 'teste'
 
   # Environment name
   environmentName: 'production'
@@ -33,7 +33,7 @@ stages:
     - task: Maven@3
       displayName: 'Maven Package'
       inputs:
-        mavenPomFile: 'pom.xml'
+        mavenPomFile: 'illumy-web/pom.xml'
 
     - task: CopyFiles@2
       displayName: 'Copy Files to artifact staging directory'
